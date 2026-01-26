@@ -3,7 +3,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import streamlit as st
 import pandas as pd
-from agents.run_graph import run_agent
+from agents.orchestrator import run_agent
 from tools.db import get_session, Meal, Workout, DailyNutrition, WorkoutSession, UserProfile, init_db
 from sqlmodel import select
 
@@ -42,7 +42,7 @@ st.markdown("""
 st.sidebar.title("🏋️ Wellness Menu")
 page = st.sidebar.radio("Navigate", ["Chat", "Profile", "Meal Logger", "Workout Logger", "Dashboard"])
 
-user = st.text_input("Your name", value="Nikhil")
+user = st.text_input("Your name", value="Aditya")
 
 # --- CHAT PAGE ---
 if page == "Chat":

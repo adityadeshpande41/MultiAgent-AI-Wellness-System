@@ -21,13 +21,14 @@ class FitnessCoachAgent:
             profile = s.exec(select(UserProfile).where(UserProfile.user == user)).first()
             if profile:
                 st.write(f"🏋️ FITNESS COACH: Using profile - Goal: {profile.primary_goal}")
+                bmi_display = f"{profile.bmi:.1f}" if profile.bmi is not None else "unknown"
                 profile_context = f"""
 User Profile Context:
 - Age: {profile.age}, Gender: {profile.gender}
 - Fitness Level: {profile.fitness_experience}
 - Primary Goal: {profile.primary_goal}
 - Activity Level: {profile.activity_level}
-- BMI: {profile.bmi:.1f if profile.bmi is not None else 'unknown'}
+- BMI: {bmi_display}
 - Health Conditions: {profile.health_conditions or 'none'}
 """
             else:

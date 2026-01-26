@@ -89,8 +89,8 @@ ai-wellness/
 │   ├── fitness_coach.py   # Fitness specialist
 │   ├── nutrition_specialist.py # Nutrition expert
 │   ├── doctor_avatar.py   # Health advisor
-│   ├── graph.py           # LangGraph workflow
-│   └── run_graph.py       # Workflow execution
+│   ├── orchestrator.py    # Custom workflow orchestrator
+│   └── run_graph.py       # Workflow execution (legacy)
 ├── tools/                  # Utilities
 │   ├── db.py              # Database models
 │   ├── rag.py             # Vector search system
@@ -129,7 +129,7 @@ ai-wellness/
 
 - **Frontend**: Streamlit
 - **Backend**: FastAPI, SQLModel
-- **AI/ML**: OpenAI GPT-4, LangChain, LangGraph
+- **AI/ML**: OpenAI GPT-4, Custom Multi-Agent Orchestrator
 - **Database**: SQLite
 - **Vector Search**: FAISS
 - **Data Processing**: Pandas, NumPy

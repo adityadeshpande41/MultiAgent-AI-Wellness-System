@@ -19,10 +19,11 @@ class DoctorAgent:
             with get_session() as s:
                 profile = s.exec(select(UserProfile).where(UserProfile.user == user)).first()
                 if profile:
+                    bmi_display = f"{profile.bmi:.1f}" if profile.bmi is not None else "unknown"
                     profile_context = f"""
 User Profile Context:
 - Age: {profile.age}, Gender: {profile.gender}
-- BMI: {profile.bmi:.1f if profile.bmi is not None else 'unknown'}
+- BMI: {bmi_display}
 - Health Conditions: {profile.health_conditions or 'none'}
 - Medications: {profile.medications or 'none'}
 - Allergies: {profile.allergies or 'none'}

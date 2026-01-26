@@ -1,20 +1,15 @@
-from agents.graph import build_graph
+# DEPRECATED: Replaced by orchestrator.py
+# This file is no longer used after removing LangGraph dependency
+# See orchestrator.py for the new implementation
 
-# Build and compile the graph once
-workflow = build_graph()
+from agents.orchestrator import run_agent
 
-def run_agent(user: str, msg: str) -> str:
+# Maintain backward compatibility
+workflow = None  # No longer needed
+
+def run_agent_deprecated(user: str, msg: str) -> str:
     """
-    Executes the LangGraph workflow for a given user and message.
-    Returns the final agent response as plain text.
+    DEPRECATED: Use orchestrator.run_agent instead
+    Maintained for backward compatibility
     """
-    import streamlit as st
-    st.write(f"🚀 WORKFLOW: Starting for user '{user}'")
-    
-    inputs = {"messages": [{"role": "user", "content": msg}], "user": user}
-    result = workflow.invoke(inputs)
-    
-    final_response = result["messages"][-1]["content"]
-    st.write("✅ WORKFLOW: Completed")
-    
-    return final_response
+    return run_agent(user, msg)
