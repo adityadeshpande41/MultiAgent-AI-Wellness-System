@@ -2,6 +2,18 @@
 from sqlmodel import SQLModel, Field, create_engine, Session
 from datetime import datetime, timezone
 from app.config import settings
+import os
+
+# Ensure storage directory exists for SQLite
+def ensure_storage_dir():
+    if settings.DB_URL.startswith("sqlite:///"):
+        db_path = settings.DB_URL.replace("sqlite:///", "")
+        db_dir = os.path.dirname(db_path)
+        if db_dir and not os.path.exists(db_dir):
+            os.makedirs(db_dir, exist_ok=True)
+
+# Create storage directory if needed
+ensure_storage_dir()
 
 engine = create_engine(settings.DB_URL, echo=False)
 
@@ -82,7 +94,13 @@ class UserProfile(SQLModel, table=True):
     updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 def init_db():
-    SQLModel.metadata.create_all(engine)
+    try:
+        SQLModel.metadata.create_all(engine)
+        print("✅ Database initialized successfully")
+    except Exception as e:
+        print(f"⚠️ Database initialization failed: {e}")
+        print("App will continue without database functionality")
+        # Don't raise the error - let the app continue without DB
 
 def get_session():
     return Session(engine)
