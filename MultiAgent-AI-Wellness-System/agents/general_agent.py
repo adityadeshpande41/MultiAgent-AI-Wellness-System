@@ -32,7 +32,7 @@ class GeneralAgent:
             }
             reply = (
                 f"I think your question might actually be related to {domain_map[analysis]}! "
-                f"Let me redirect you to the right specialist for better help with: '{message}'"
+                f"Could you be more specific so I can help you better?: '{message}'"
             )
             # Note: In a real implementation, you'd want to re-route here
             # For now, we'll just suggest the correct domain
