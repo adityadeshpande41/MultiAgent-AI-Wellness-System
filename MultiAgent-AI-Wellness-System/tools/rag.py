@@ -27,10 +27,59 @@ def build_index():
     json.dump({"docs": docs, "metas": metas}, open(META_PATH, "w"))
     print("FAISS index built.")
 
-def search(query, k=3):
+def search(query, k=3, filter_files=None):
+    """
+    Enhanced search with optional file filtering
+    
+    Args:
+        query: Search query string
+        k: Number of results to return
+        filter_files: List of filenames to search within (e.g., ['fitness_advanced.txt'])
+    """
     index = faiss.read_index(INDEX_PATH)
     meta = json.load(open(META_PATH))
     qv = embed_texts([query])
     faiss.normalize_L2(qv)
-    D, I = index.search(qv, k)
-    return [meta["docs"][i] for i in I[0] if i != -1]
+    
+    # Get more results initially if filtering
+    search_k = k * 3 if filter_files else k
+    D, I = index.search(qv, min(search_k, len(meta["docs"])))
+    
+    results = []
+    for i, idx in enumerate(I[0]):
+        if idx == -1:
+            continue
+            
+        # Apply file filtering if specified
+        if filter_files:
+            doc_file = meta["metas"][idx]["file"]
+            if doc_file not in filter_files:
+                continue
+                
+        results.append(meta["docs"][idx])
+        
+        # Stop when we have enough results
+        if len(results) >= k:
+            break
+    
+    return results
+
+def search_fitness(query, k=3):
+    """Search specifically in fitness knowledge bases"""
+    return search(query, k, filter_files=['fitness_advanced.txt', 'fitness.txt'])
+
+def search_nutrition(query, k=3):
+    """Search specifically in nutrition knowledge bases"""
+    return search(query, k, filter_files=['nutrition_comprehensive.txt', 'nutrition.txt'])
+
+def search_medical(query, k=3):
+    """Search specifically in medical knowledge bases"""
+    return search(query, k, filter_files=['medical_comprehensive.txt', 'medical.txt', 'doctor_avatar_knowledge.txt'])
+
+def search_mental_health(query, k=3):
+    """Search specifically in mental health knowledge bases"""
+    return search(query, k, filter_files=['mental_health_specialist.txt'])
+
+def search_tracking(query, k=3):
+    """Search specifically in tracking/visualization knowledge bases"""
+    return search(query, k, filter_files=['tracking_visualization.txt'])

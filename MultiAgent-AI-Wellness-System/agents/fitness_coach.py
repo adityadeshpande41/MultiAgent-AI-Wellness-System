@@ -30,11 +30,11 @@ User Profile Context:
         except Exception:
             pass
         
-        # Try to retrieve relevant fitness context
+        # Try to retrieve relevant fitness context from fitness-specific knowledge bases
         context_docs = ""
         try:
-            from tools.rag import search
-            context_docs = "\n".join(search(f"fitness {message}"))
+            from tools.rag import search_fitness
+            context_docs = "\n".join(search_fitness(message))
         except Exception:
             context_docs = "No additional context available."
         

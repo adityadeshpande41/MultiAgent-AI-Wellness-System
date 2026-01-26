@@ -28,11 +28,11 @@ User Profile Context:
 - Health Conditions: {profile.health_conditions or 'none'}
 """
         
-        # Try to retrieve relevant nutrition context
+        # Try to retrieve relevant nutrition context from nutrition-specific knowledge bases
         context_docs = ""
         try:
-            from tools.rag import search
-            context_docs = "\n".join(search(f"nutrition {message}"))
+            from tools.rag import search_nutrition
+            context_docs = "\n".join(search_nutrition(message))
         except Exception as e:
             # RAG not available, continue without context
             context_docs = "No additional context available."

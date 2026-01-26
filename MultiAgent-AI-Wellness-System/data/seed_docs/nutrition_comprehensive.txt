@@ -1,0 +1,270 @@
+# Comprehensive Nutrition Knowledge Base
+
+## Macronutrients Deep Dive
+
+### Proteins
+**Complete Proteins (contain all essential amino acids):**
+- Animal sources: Chicken, beef, fish, eggs, dairy
+- Plant sources: Quinoa, buckwheat, hemp seeds, chia seeds, spirulina
+
+**Incomplete Proteins (missing one or more essential amino acids):**
+- Legumes: Beans, lentils, peas (low in methionine)
+- Grains: Rice, wheat, oats (low in lysine)
+- Nuts and seeds: Almonds, sunflower seeds (varies by type)
+
+**Protein Combining Examples:**
+- Rice + beans = complete protein
+- Hummus + whole grain pita = complete protein
+- Peanut butter + whole grain bread = complete protein
+
+**Daily Requirements:**
+- Sedentary adults: 0.8g per kg body weight
+- Active individuals: 1.2-1.6g per kg body weight
+- Athletes/strength training: 1.6-2.2g per kg body weight
+- Older adults (65+): 1.0-1.2g per kg body weight
+
+### Carbohydrates
+**Simple Carbohydrates:**
+- **Natural**: Fruits (fructose), milk (lactose), honey
+- **Refined**: Table sugar, candy, soda, pastries
+- **Timing**: Best consumed around workouts for quick energy
+
+**Complex Carbohydrates:**
+- **Starches**: Potatoes, rice, pasta, bread, oats
+- **Fiber**: Vegetables, fruits, legumes, whole grains
+- **Benefits**: Sustained energy, blood sugar stability, satiety
+
+**Glycemic Index Guidelines:**
+- **Low GI (55 or less)**: Oats, quinoa, sweet potatoes, most vegetables
+- **Medium GI (56-69)**: Brown rice, whole grain bread, bananas
+- **High GI (70+)**: White bread, white rice, watermelon, dates
+
+### Fats
+**Saturated Fats (limit to <10% of calories):**
+- Sources: Butter, coconut oil, red meat, full-fat dairy
+- Effects: Can raise LDL cholesterol in some individuals
+
+**Monounsaturated Fats (beneficial):**
+- Sources: Olive oil, avocados, nuts, seeds
+- Benefits: Heart health, inflammation reduction
+
+**Polyunsaturated Fats:**
+- **Omega-3**: Fatty fish, walnuts, flaxseeds, chia seeds
+- **Omega-6**: Vegetable oils, nuts, seeds
+- **Ratio**: Aim for 1:1 to 1:4 omega-3 to omega-6 ratio
+
+**Trans Fats (avoid completely):**
+- Sources: Partially hydrogenated oils, some margarines, fried foods
+- Effects: Increase LDL, decrease HDL, promote inflammation
+
+## Micronutrients and Deficiency Prevention
+
+### Water-Soluble Vitamins
+**Vitamin C:**
+- Sources: Citrus fruits, berries, bell peppers, broccoli
+- Functions: Immune support, collagen synthesis, antioxidant
+- Daily needs: 75mg (women), 90mg (men)
+
+**B-Complex Vitamins:**
+- **B12**: Animal products, nutritional yeast, fortified foods
+- **Folate**: Leafy greens, legumes, fortified grains
+- **B6**: Poultry, fish, potatoes, chickpeas
+- **Thiamine (B1)**: Whole grains, pork, legumes
+
+### Fat-Soluble Vitamins
+**Vitamin D:**
+- Sources: Sunlight, fatty fish, fortified foods, supplements
+- Functions: Bone health, immune function, mood regulation
+- Daily needs: 600-800 IU (higher for deficient individuals)
+
+**Vitamin A:**
+- Sources: Orange vegetables, leafy greens, liver, dairy
+- Functions: Vision, immune function, cell growth
+
+**Vitamin K:**
+- Sources: Leafy greens, broccoli, Brussels sprouts
+- Functions: Blood clotting, bone metabolism
+
+### Essential Minerals
+**Iron:**
+- **Heme iron**: Red meat, poultry, fish (better absorbed)
+- **Non-heme iron**: Spinach, lentils, tofu, fortified cereals
+- **Absorption enhancers**: Vitamin C, meat proteins
+- **Inhibitors**: Calcium, tannins (tea/coffee), phytates
+
+**Calcium:**
+- Sources: Dairy, leafy greens, sardines, almonds, fortified foods
+- Daily needs: 1000mg (adults), 1200mg (women 50+, men 70+)
+- **Absorption**: Requires vitamin D, magnesium
+
+**Magnesium:**
+- Sources: Nuts, seeds, whole grains, leafy greens, dark chocolate
+- Functions: Muscle/nerve function, energy metabolism, bone health
+
+**Zinc:**
+- Sources: Oysters, red meat, poultry, beans, nuts, seeds
+- Functions: Immune function, wound healing, protein synthesis
+
+## Meal Planning and Timing
+
+### Pre-Workout Nutrition (1-3 hours before)
+**Goals**: Fuel muscles, maintain blood sugar, minimize GI distress
+- **Carbohydrates**: 1-4g per kg body weight
+- **Protein**: 0.25g per kg body weight
+- **Fat**: Minimal (slows digestion)
+- **Examples**: Banana with almond butter, oatmeal with berries, Greek yogurt with granola
+
+### Post-Workout Nutrition (within 2 hours)
+**Goals**: Replenish glycogen, stimulate protein synthesis, rehydrate
+- **Carbohydrates**: 1-1.2g per kg body weight
+- **Protein**: 20-40g high-quality protein
+- **Ratio**: 3:1 or 4:1 carbs to protein for endurance athletes
+- **Examples**: Chocolate milk, protein smoothie with fruit, chicken and rice
+
+### Intermittent Fasting Protocols
+**16:8 Method:**
+- Fast: 16 hours (including sleep)
+- Eating window: 8 hours (e.g., 12pm-8pm)
+- Benefits: May improve insulin sensitivity, promote fat loss
+
+**5:2 Method:**
+- Normal eating: 5 days per week
+- Restricted calories: 2 non-consecutive days (500-600 calories)
+- Benefits: May support weight loss, metabolic health
+
+**Considerations:**
+- Not suitable for everyone (pregnant women, diabetics, eating disorder history)
+- May affect athletic performance if poorly timed
+- Hydration remains important during fasting periods
+
+## Special Dietary Approaches
+
+### Mediterranean Diet
+**Core Components:**
+- High: Olive oil, fish, vegetables, fruits, whole grains, legumes, nuts
+- Moderate: Poultry, eggs, dairy
+- Limited: Red meat, processed foods, refined sugars
+- **Benefits**: Heart health, brain function, longevity
+
+### Plant-Based Nutrition
+**Protein Sources**: Legumes, quinoa, tofu, tempeh, nuts, seeds
+**Key Nutrients to Monitor:**
+- Vitamin B12: Supplement or fortified foods
+- Iron: Combine with vitamin C sources
+- Omega-3: Algae supplements, walnuts, flaxseeds
+- Calcium: Fortified plant milks, tahini, leafy greens
+
+### Ketogenic Diet
+**Macronutrient Ratios:**
+- Fat: 70-80% of calories
+- Protein: 15-25% of calories
+- Carbohydrates: 5-10% of calories (20-50g daily)
+
+**Potential Benefits**: Rapid weight loss, improved insulin sensitivity
+**Considerations**: Difficult to maintain, may affect athletic performance, requires medical supervision for some conditions
+
+## Hydration Science
+
+### Daily Fluid Needs
+**General Guidelines:**
+- Men: 3.7 liters (15.5 cups) total fluids daily
+- Women: 2.7 liters (11.5 cups) total fluids daily
+- Athletes: Additional 500-750ml per hour of exercise
+
+### Electrolyte Balance
+**Sodium**: 2300mg daily limit (1500mg for heart health)
+- Sources: Table salt, processed foods, sports drinks
+- Functions: Fluid balance, nerve transmission, muscle contraction
+
+**Potassium**: 3500-4700mg daily
+- Sources: Bananas, potatoes, spinach, beans, yogurt
+- Functions: Blood pressure regulation, muscle function
+
+**Hydration Indicators:**
+- Urine color: Pale yellow indicates good hydration
+- Thirst: Late indicator of dehydration
+- Body weight: 2% loss indicates dehydration
+
+## Food Safety and Preparation
+
+### Safe Food Handling
+**Temperature Guidelines:**
+- Refrigerator: 40°F (4°C) or below
+- Freezer: 0°F (-18°C) or below
+- Danger zone: 40-140°F (4-60°C) - bacteria multiply rapidly
+
+**Cooking Temperatures:**
+- Poultry: 165°F (74°C)
+- Ground meat: 160°F (71°C)
+- Whole cuts of beef/pork: 145°F (63°C)
+- Fish: 145°F (63°C)
+
+### Meal Prep Strategies
+**Batch Cooking:**
+- Cook grains, proteins, and roasted vegetables in large quantities
+- Store in portion-sized containers for easy assembly
+- Shelf life: 3-4 days refrigerated, 2-3 months frozen
+
+**Prep-Ahead Components:**
+- Wash and chop vegetables
+- Cook hard-boiled eggs
+- Prepare overnight oats
+- Make homemade dressings and sauces
+
+## Supplements and Functional Foods
+
+### Evidence-Based Supplements
+**Creatine Monohydrate:**
+- Dosage: 3-5g daily
+- Benefits: Increased power output, muscle mass, recovery
+- Best for: High-intensity, short-duration activities
+
+**Whey Protein:**
+- Dosage: 20-40g post-workout
+- Benefits: Muscle protein synthesis, convenience
+- Alternatives: Casein, plant-based proteins
+
+**Omega-3 Fatty Acids:**
+- Dosage: 1-3g EPA/DHA daily
+- Benefits: Heart health, inflammation reduction, brain function
+- Sources: Fish oil, algae oil (vegan option)
+
+**Vitamin D3:**
+- Dosage: 1000-4000 IU daily (based on blood levels)
+- Benefits: Bone health, immune function, mood
+- Testing: 25(OH)D blood test recommended
+
+### Probiotics and Gut Health
+**Beneficial Strains:**
+- Lactobacillus acidophilus: Digestive health, immune support
+- Bifidobacterium longum: Gut barrier function, inflammation reduction
+- Saccharomyces boulardii: Antibiotic-associated diarrhea prevention
+
+**Prebiotic Foods:**
+- Garlic, onions, leeks, asparagus, bananas, oats
+- Function: Feed beneficial gut bacteria
+
+## Age-Specific Nutrition Needs
+
+### Children and Adolescents
+**Growth Requirements:**
+- Higher protein needs per kg body weight
+- Adequate calcium and vitamin D for bone development
+- Iron needs increase during growth spurts
+- Limit added sugars to <10% of calories
+
+### Older Adults (65+)
+**Changing Needs:**
+- Increased protein requirements (1.0-1.2g/kg)
+- Vitamin B12 absorption may decrease
+- Adequate fiber for digestive health
+- Hydration awareness (thirst sensation decreases)
+- Nutrient-dense foods due to decreased appetite
+
+### Pregnancy and Lactation
+**Key Nutrients:**
+- Folic acid: 600mcg daily (prevent neural tube defects)
+- Iron: 27mg daily (increased blood volume)
+- Calcium: 1000mg daily (fetal bone development)
+- DHA: 200-300mg daily (brain development)
+- **Avoid**: Alcohol, high-mercury fish, raw/undercooked foods

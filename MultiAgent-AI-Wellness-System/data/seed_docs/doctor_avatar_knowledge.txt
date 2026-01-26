@@ -1,0 +1,402 @@
+# Doctor Avatar Medical Knowledge Base
+
+## Clinical Assessment and Diagnosis
+
+### History Taking and Physical Examination
+**Chief Complaint Assessment:**
+- OLDCARTS method: Onset, Location, Duration, Character, Aggravating/Alleviating factors, Radiation, Timing, Severity
+- Associated symptoms and review of systems
+- Impact on daily activities and quality of life
+- Patient's concerns and expectations
+
+**Past Medical History:**
+- Previous illnesses, surgeries, hospitalizations
+- Chronic medical conditions and management
+- Allergies and adverse drug reactions
+- Immunization history
+- Family history of genetic or hereditary conditions
+
+**Social History:**
+- Occupation and occupational exposures
+- Tobacco, alcohol, and substance use
+- Sexual history and reproductive health
+- Travel history and environmental exposures
+- Social support systems and living situation
+
+**Medication History:**
+- Current prescription medications and dosages
+- Over-the-counter medications and supplements
+- Adherence and effectiveness
+- Previous medication trials and responses
+- Drug interactions and contraindications
+
+### Physical Examination Techniques
+**Vital Signs Assessment:**
+- Blood pressure: Proper cuff size, positioning, multiple readings
+- Heart rate: Rate, rhythm, quality
+- Respiratory rate: Rate, depth, effort, oxygen saturation
+- Temperature: Route of measurement, fever patterns
+- Pain assessment: Numeric scales, behavioral indicators
+
+**Systems-Based Examination:**
+- **Cardiovascular**: Heart sounds, murmurs, peripheral pulses, edema
+- **Respiratory**: Breath sounds, respiratory effort, chest expansion
+- **Neurological**: Mental status, cranial nerves, motor/sensory function, reflexes
+- **Gastrointestinal**: Abdominal inspection, palpation, bowel sounds
+- **Musculoskeletal**: Range of motion, strength, stability, deformities
+
+## Common Clinical Presentations
+
+### Acute Care Scenarios
+**Chest Pain Evaluation:**
+- **Cardiac causes**: Myocardial infarction, angina, pericarditis, aortic dissection
+- **Pulmonary causes**: Pulmonary embolism, pneumothorax, pneumonia
+- **Gastrointestinal causes**: GERD, esophageal spasm, peptic ulcer disease
+- **Musculoskeletal causes**: Costochondritis, muscle strain, rib fracture
+
+**Diagnostic approach:**
+- ECG: ST changes, Q waves, arrhythmias
+- Cardiac enzymes: Troponin, CK-MB
+- Chest X-ray: Pneumothorax, infiltrates, cardiomegaly
+- Risk stratification: TIMI score, HEART score
+
+**Shortness of Breath (Dyspnea):**
+- **Cardiac causes**: Heart failure, myocardial infarction, arrhythmias
+- **Pulmonary causes**: Asthma, COPD exacerbation, pneumonia, pulmonary embolism
+- **Other causes**: Anemia, anxiety, deconditioning, metabolic acidosis
+
+**Assessment tools:**
+- Pulse oximetry and arterial blood gas
+- Brain natriuretic peptide (BNP) for heart failure
+- D-dimer for pulmonary embolism screening
+- Peak flow for asthma assessment
+
+**Abdominal Pain:**
+- **Right upper quadrant**: Cholecystitis, hepatitis, peptic ulcer
+- **Right lower quadrant**: Appendicitis, ovarian pathology, kidney stones
+- **Left lower quadrant**: Diverticulitis, inflammatory bowel disease
+- **Epigastric**: Peptic ulcer, pancreatitis, myocardial infarction
+
+### Chronic Disease Management
+**Diabetes Mellitus:**
+- **Type 1**: Autoimmune destruction of beta cells, insulin dependent
+- **Type 2**: Insulin resistance and relative insulin deficiency
+- **Gestational**: Glucose intolerance during pregnancy
+
+**Management goals:**
+- HbA1c <7% for most adults (individualized targets)
+- Blood pressure <130/80 mmHg
+- LDL cholesterol <100 mg/dL (or <70 mg/dL for high cardiovascular risk)
+- Annual screening for complications (retinopathy, nephropathy, neuropathy)
+
+**Hypertension:**
+- **Classification**: Normal <120/80, Elevated 120-129/<80, Stage 1 130-139/80-89, Stage 2 ≥140/90
+- **Target blood pressure**: <130/80 for most adults
+- **Lifestyle modifications**: DASH diet, sodium restriction, weight loss, exercise, alcohol moderation
+
+**Medication classes:**
+- ACE inhibitors/ARBs: First-line for most patients
+- Thiazide diuretics: Effective for volume-related hypertension
+- Calcium channel blockers: Good for elderly and African Americans
+- Beta-blockers: Indicated for heart failure or post-MI
+
+**Hyperlipidemia:**
+- **Primary prevention**: Statin therapy for 10-year ASCVD risk ≥7.5%
+- **Secondary prevention**: High-intensity statin for established ASCVD
+- **Target LDL**: <70 mg/dL for very high risk, <100 mg/dL for high risk
+- **Lifestyle**: Mediterranean diet, regular exercise, weight management
+
+### Infectious Diseases
+**Upper Respiratory Infections:**
+- **Viral**: Common cold, influenza, COVID-19
+- **Bacterial**: Streptococcal pharyngitis, sinusitis, otitis media
+
+**Antibiotic stewardship:**
+- Centor criteria for strep throat (fever, tonsillar exudates, tender lymph nodes, absence of cough)
+- Rapid strep test or throat culture for confirmation
+- Avoid antibiotics for viral infections
+
+**Urinary Tract Infections:**
+- **Cystitis**: Dysuria, frequency, urgency, suprapubic pain
+- **Pyelonephritis**: Fever, flank pain, nausea, vomiting
+- **Risk factors**: Female gender, sexual activity, diabetes, immunosuppression
+
+**Diagnostic approach:**
+- Urinalysis: Nitrites, leukocyte esterase, WBC, bacteria
+- Urine culture for complicated infections or treatment failures
+- Imaging for recurrent infections or suspected complications
+
+**Skin and Soft Tissue Infections:**
+- **Cellulitis**: Spreading infection of dermis and subcutaneous tissue
+- **Abscess**: Localized collection of pus requiring drainage
+- **Impetigo**: Superficial bacterial infection with honey-crusted lesions
+
+## Diagnostic Testing and Interpretation
+
+### Laboratory Studies
+**Complete Blood Count (CBC):**
+- **Hemoglobin/Hematocrit**: Anemia evaluation (iron deficiency, chronic disease, B12/folate deficiency)
+- **White blood cell count**: Infection, inflammation, hematologic malignancy
+- **Platelet count**: Bleeding risk, thrombocytopenia causes
+
+**Basic Metabolic Panel (BMP):**
+- **Glucose**: Diabetes screening and monitoring
+- **Electrolytes**: Sodium, potassium, chloride, CO2 imbalances
+- **Kidney function**: Creatinine, blood urea nitrogen (BUN)
+
+**Liver Function Tests:**
+- **Hepatocellular injury**: ALT, AST elevation
+- **Cholestatic pattern**: Alkaline phosphatase, bilirubin elevation
+- **Synthetic function**: Albumin, prothrombin time/INR
+
+**Lipid Panel:**
+- **Total cholesterol**: <200 mg/dL desirable
+- **LDL cholesterol**: Primary target for therapy
+- **HDL cholesterol**: >40 mg/dL (men), >50 mg/dL (women)
+- **Triglycerides**: <150 mg/dL normal
+
+**Thyroid Function:**
+- **TSH**: Primary screening test for thyroid dysfunction
+- **Free T4**: Assessment of thyroid hormone levels
+- **Interpretation**: Primary vs. secondary hypothyroidism/hyperthyroidism
+
+### Imaging Studies
+**Chest X-ray:**
+- **Indications**: Cough, shortness of breath, chest pain, fever
+- **Findings**: Pneumonia, pneumothorax, pleural effusion, cardiomegaly
+- **Limitations**: Poor sensitivity for early pneumonia, pulmonary embolism
+
+**Electrocardiogram (ECG):**
+- **Indications**: Chest pain, palpitations, syncope, dyspnea
+- **Interpretation**: Rate, rhythm, axis, intervals, ST changes, Q waves
+- **Limitations**: Normal ECG doesn't rule out cardiac pathology
+
+**Computed Tomography (CT):**
+- **Head CT**: Stroke, trauma, headache evaluation
+- **Chest CT**: Pulmonary embolism, lung nodules, interstitial disease
+- **Abdominal CT**: Appendicitis, diverticulitis, kidney stones, trauma
+
+**Ultrasound:**
+- **Advantages**: No radiation, real-time imaging, portable
+- **Applications**: Gallbladder, kidneys, heart, blood vessels, pregnancy
+- **Limitations**: Operator dependent, limited by body habitus, bowel gas
+
+## Pharmacology and Therapeutics
+
+### Medication Classes and Mechanisms
+**Cardiovascular Medications:**
+- **ACE inhibitors**: Block angiotensin-converting enzyme, reduce afterload
+- **Beta-blockers**: Block beta-adrenergic receptors, reduce heart rate and contractility
+- **Calcium channel blockers**: Block calcium channels, cause vasodilation
+- **Diuretics**: Increase sodium and water excretion, reduce preload
+
+**Antimicrobials:**
+- **Penicillins**: Beta-lactam antibiotics, inhibit cell wall synthesis
+- **Cephalosporins**: Broad-spectrum beta-lactams, multiple generations
+- **Fluoroquinolones**: DNA gyrase inhibitors, broad-spectrum coverage
+- **Macrolides**: Protein synthesis inhibitors, good for atypical organisms
+
+**Analgesics:**
+- **NSAIDs**: COX inhibition, anti-inflammatory and analgesic effects
+- **Acetaminophen**: Central analgesic and antipyretic effects
+- **Opioids**: Mu-opioid receptor agonists, potent analgesics with addiction risk
+
+### Prescribing Considerations
+**Dosing and Administration:**
+- Patient-specific factors: Age, weight, kidney/liver function
+- Drug interactions: CYP450 metabolism, protein binding
+- Timing: With or without food, frequency of administration
+- Duration: Acute vs. chronic therapy, tapering requirements
+
+**Adverse Effects and Monitoring:**
+- Common side effects and patient counseling
+- Serious adverse reactions and warning signs
+- Laboratory monitoring requirements
+- Drug allergies and cross-reactivity
+
+**Special Populations:**
+- **Pregnancy**: FDA pregnancy categories, teratogenic risks
+- **Pediatrics**: Weight-based dosing, developmental considerations
+- **Geriatrics**: Beers criteria, polypharmacy, altered pharmacokinetics
+- **Kidney/liver disease**: Dose adjustments, contraindications
+
+## Preventive Medicine and Health Maintenance
+
+### Screening Guidelines
+**Cancer Screening:**
+- **Breast cancer**: Mammography starting age 50 (or 40-49 with shared decision-making)
+- **Cervical cancer**: Pap smear every 3 years (ages 21-65), HPV co-testing option
+- **Colorectal cancer**: Colonoscopy every 10 years starting age 50 (or 45 for average risk)
+- **Lung cancer**: Low-dose CT for high-risk smokers (ages 50-80)
+
+**Cardiovascular Screening:**
+- **Blood pressure**: Every 1-2 years for normal BP, more frequently if elevated
+- **Cholesterol**: Every 5 years starting age 35 (men) or 45 (women)
+- **Diabetes**: Every 3 years starting age 45, or earlier if risk factors present
+
+**Osteoporosis Screening:**
+- **DEXA scan**: Women ≥65, men ≥70, or younger with risk factors
+- **Risk assessment**: FRAX calculator for fracture risk prediction
+- **Prevention**: Calcium, vitamin D, weight-bearing exercise
+
+### Immunizations
+**Adult Immunization Schedule:**
+- **Influenza**: Annual vaccination for all adults ≥6 months
+- **Tdap**: One-time dose, then Td booster every 10 years
+- **Pneumococcal**: PCV13 and PPSV23 for adults ≥65 or with risk factors
+- **Zoster**: Shingrix for adults ≥50 years (2 doses)
+- **HPV**: Ages 9-26 (routine), ages 27-45 (shared decision-making)
+
+**Travel Medicine:**
+- Destination-specific recommendations
+- Yellow fever, typhoid, hepatitis A/B, meningococcal vaccines
+- Malaria prophylaxis and prevention measures
+- Traveler's diarrhea prevention and treatment
+
+### Lifestyle Counseling
+**Smoking Cessation:**
+- **5 A's approach**: Ask, Advise, Assess, Assist, Arrange follow-up
+- **Pharmacotherapy**: Nicotine replacement, bupropion, varenicline
+- **Behavioral interventions**: Counseling, support groups, quitlines
+- **Relapse prevention**: Identifying triggers, coping strategies
+
+**Weight Management:**
+- **Assessment**: BMI calculation, waist circumference, comorbidities
+- **Goals**: 5-10% weight loss for health benefits
+- **Interventions**: Caloric restriction, increased physical activity, behavioral modification
+- **Pharmacotherapy**: FDA-approved weight loss medications for BMI ≥30 or ≥27 with comorbidities
+
+## Emergency Medicine Principles
+
+### Triage and Prioritization
+**Emergency Severity Index (ESI):**
+- **Level 1**: Immediate life-threatening conditions
+- **Level 2**: High-risk situations, severe pain/distress
+- **Level 3**: Stable patients requiring multiple resources
+- **Level 4**: Stable patients requiring one resource
+- **Level 5**: Non-urgent conditions
+
+**Primary Survey (ABCDE):**
+- **Airway**: Patency, protection, positioning
+- **Breathing**: Rate, effort, oxygen saturation, breath sounds
+- **Circulation**: Pulse, blood pressure, perfusion, bleeding control
+- **Disability**: Neurological assessment, Glasgow Coma Scale
+- **Exposure**: Complete examination, temperature control
+
+### Life-Threatening Emergencies
+**Cardiac Arrest:**
+- **Recognition**: Unresponsive, no pulse, agonal breathing
+- **Management**: High-quality CPR, early defibrillation, ACLS protocols
+- **Reversible causes**: 4 H's and 4 T's (hypoxia, hypovolemia, hydrogen ions, hypo/hyperkalemia, tension pneumothorax, tamponade, toxins, thrombosis)
+
+**Stroke:**
+- **Recognition**: FAST assessment (Face, Arms, Speech, Time)
+- **Types**: Ischemic (87%) vs. hemorrhagic (13%)
+- **Management**: Time-sensitive thrombolysis or thrombectomy for ischemic stroke
+- **Complications**: Increased intracranial pressure, herniation
+
+**Sepsis:**
+- **Recognition**: SIRS criteria + suspected infection
+- **Severe sepsis**: Organ dysfunction, hypotension, hypoperfusion
+- **Septic shock**: Persistent hypotension despite fluid resuscitation
+- **Management**: Early antibiotics, fluid resuscitation, vasopressors
+
+## Clinical Decision-Making and Evidence-Based Medicine
+
+### Diagnostic Reasoning
+**Differential Diagnosis:**
+- Pattern recognition and illness scripts
+- Probabilistic thinking and Bayesian reasoning
+- Anchoring bias and premature closure avoidance
+- Red flags and can't-miss diagnoses
+
+**Test Characteristics:**
+- **Sensitivity**: Ability to detect disease when present (true positive rate)
+- **Specificity**: Ability to exclude disease when absent (true negative rate)
+- **Positive predictive value**: Probability of disease given positive test
+- **Negative predictive value**: Probability of no disease given negative test
+- **Likelihood ratios**: How much a test result changes probability of disease
+
+### Evidence-Based Practice
+**Levels of Evidence:**
+- **Level 1**: Systematic reviews and meta-analyses of RCTs
+- **Level 2**: Individual randomized controlled trials
+- **Level 3**: Controlled trials without randomization
+- **Level 4**: Case-control and cohort studies
+- **Level 5**: Case series and expert opinion
+
+**Critical Appraisal:**
+- Study design appropriateness
+- Sample size and power calculations
+- Bias assessment and confounding variables
+- Clinical significance vs. statistical significance
+- Applicability to patient population
+
+### Quality Improvement and Patient Safety
+**Medical Errors:**
+- **Types**: Diagnostic, treatment, preventive, communication errors
+- **Contributing factors**: System issues, cognitive biases, fatigue, interruptions
+- **Prevention**: Checklists, protocols, double-checking, team communication
+
+**Patient Safety Culture:**
+- Just culture vs. blame culture
+- Error reporting and learning systems
+- Root cause analysis and failure mode analysis
+- Continuous quality improvement initiatives
+
+## Professional Development and Ethics
+
+### Medical Ethics Principles
+**Autonomy:**
+- Informed consent and shared decision-making
+- Respect for patient values and preferences
+- Cultural competency and sensitivity
+- Advance directives and end-of-life care
+
+**Beneficence and Non-maleficence:**
+- Acting in patient's best interest
+- Risk-benefit analysis of interventions
+- Primum non nocere (first, do no harm)
+- Quality of life considerations
+
+**Justice:**
+- Fair distribution of healthcare resources
+- Equal access to care regardless of ability to pay
+- Avoiding discrimination and bias
+- Advocacy for vulnerable populations
+
+### Communication Skills
+**Patient-Centered Communication:**
+- Active listening and empathy
+- Open-ended questions and reflection
+- Shared decision-making and goal setting
+- Breaking bad news with compassion
+
+**Interprofessional Communication:**
+- SBAR format (Situation, Background, Assessment, Recommendation)
+- Closed-loop communication and read-backs
+- Conflict resolution and team dynamics
+- Handoff communication and continuity of care
+
+### Lifelong Learning
+**Continuing Medical Education:**
+- Staying current with medical literature
+- Attending conferences and workshops
+- Peer review and case discussions
+- Quality improvement projects
+
+**Self-Assessment and Reflection:**
+- Identifying knowledge gaps and learning needs
+- Seeking feedback from colleagues and patients
+- Reflective practice and professional growth
+- Maintaining board certification and licensure
+
+## Disclaimer and Scope of Practice
+This knowledge base is for educational purposes and clinical decision support. It should not replace:
+- Individual clinical judgment and patient assessment
+- Consultation with specialists when appropriate
+- Institution-specific protocols and guidelines
+- Current evidence-based practice guidelines
+- Legal and regulatory requirements
+
+Always consider the individual patient context, comorbidities, and preferences when making clinical decisions. When in doubt, seek consultation or refer to appropriate specialists.

@@ -1,0 +1,174 @@
+# Advanced Fitness Knowledge Base
+
+## Exercise Physiology
+
+### Energy Systems
+- **Phosphocreatine System**: Provides immediate energy for 0-10 seconds of high-intensity exercise
+- **Glycolytic System**: Fuels moderate to high-intensity exercise for 10 seconds to 2 minutes
+- **Oxidative System**: Supports low to moderate-intensity exercise for extended periods (2+ minutes)
+
+### Muscle Fiber Types
+- **Type I (Slow-twitch)**: High endurance, fatigue-resistant, better for aerobic activities
+- **Type IIa (Fast-twitch oxidative)**: Moderate power and endurance, adaptable to training
+- **Type IIx (Fast-twitch glycolytic)**: High power, low endurance, best for explosive movements
+
+### Training Principles
+- **Progressive Overload**: Gradually increase training stimulus (weight, reps, sets, frequency)
+- **Specificity**: Training adaptations are specific to the type of exercise performed
+- **Reversibility**: "Use it or lose it" - fitness gains are lost without continued training
+- **Individual Differences**: People respond differently to the same training program
+
+## Strength Training Programs
+
+### Beginner (0-6 months)
+**Full Body Routine (3x/week)**
+- Squats: 3 sets x 8-12 reps
+- Push-ups or Bench Press: 3 sets x 8-12 reps
+- Bent-over Rows: 3 sets x 8-12 reps
+- Overhead Press: 3 sets x 8-12 reps
+- Planks: 3 sets x 30-60 seconds
+- Deadlifts: 2 sets x 5-8 reps
+
+### Intermediate (6-18 months)
+**Upper/Lower Split (4x/week)**
+**Upper Day:**
+- Bench Press: 4 sets x 6-8 reps
+- Bent-over Rows: 4 sets x 6-8 reps
+- Overhead Press: 3 sets x 8-10 reps
+- Pull-ups/Lat Pulldowns: 3 sets x 8-12 reps
+- Dips: 3 sets x 10-15 reps
+- Bicep Curls: 3 sets x 12-15 reps
+
+**Lower Day:**
+- Squats: 4 sets x 6-8 reps
+- Romanian Deadlifts: 3 sets x 8-10 reps
+- Bulgarian Split Squats: 3 sets x 10-12 each leg
+- Hip Thrusts: 3 sets x 12-15 reps
+- Calf Raises: 4 sets x 15-20 reps
+
+### Advanced (18+ months)
+**Push/Pull/Legs Split (6x/week)**
+**Push Day:**
+- Bench Press: 5 sets x 3-5 reps
+- Incline Dumbbell Press: 4 sets x 6-8 reps
+- Overhead Press: 4 sets x 6-8 reps
+- Lateral Raises: 4 sets x 12-15 reps
+- Tricep Dips: 3 sets x 10-12 reps
+- Close-grip Bench Press: 3 sets x 8-10 reps
+
+## Cardiovascular Training
+
+### HIIT Protocols
+**Tabata (4 minutes total)**
+- 20 seconds all-out effort
+- 10 seconds rest
+- Repeat 8 rounds
+
+**30/30 Intervals (20 minutes)**
+- 30 seconds high intensity (85-90% max heart rate)
+- 30 seconds recovery (60-70% max heart rate)
+- Repeat 20 rounds
+
+### LISS Guidelines
+- **Zone 2 Training**: 60-70% max heart rate for 30-60 minutes
+- **Benefits**: Improved fat oxidation, aerobic base, recovery enhancement
+- **Frequency**: 2-4 sessions per week
+
+## Mobility and Flexibility
+
+### Dynamic Warm-up (Pre-workout)
+1. Arm circles: 10 forward, 10 backward
+2. Leg swings: 10 front-to-back, 10 side-to-side each leg
+3. Hip circles: 10 each direction
+4. Walking lunges with twist: 10 each side
+5. High knees: 20 steps
+6. Butt kicks: 20 steps
+
+### Static Stretching (Post-workout)
+1. Hamstring stretch: 30 seconds each leg
+2. Quad stretch: 30 seconds each leg
+3. Calf stretch: 30 seconds each leg
+4. Chest doorway stretch: 30 seconds
+5. Shoulder cross-body stretch: 30 seconds each arm
+6. Hip flexor stretch: 30 seconds each side
+
+## Recovery and Regeneration
+
+### Sleep Optimization
+- **Duration**: 7-9 hours for optimal recovery
+- **Quality**: Deep sleep stages crucial for growth hormone release
+- **Consistency**: Same bedtime and wake time daily
+- **Environment**: Cool (65-68°F), dark, quiet room
+
+### Active Recovery Methods
+- **Light cardio**: 20-30 minutes at 50-60% max heart rate
+- **Yoga or stretching**: 15-30 minutes daily
+- **Foam rolling**: 10-15 minutes targeting tight areas
+- **Walking**: 8,000-10,000 steps on rest days
+
+### Nutrition for Recovery
+- **Post-workout window**: Consume protein and carbs within 2 hours
+- **Protein timing**: 20-40g protein every 3-4 hours
+- **Hydration**: Replace 150% of fluid lost during exercise
+- **Anti-inflammatory foods**: Berries, fatty fish, leafy greens
+
+## Common Injuries and Prevention
+
+### Lower Back Pain
+**Prevention:**
+- Strengthen core muscles (planks, dead bugs, bird dogs)
+- Improve hip mobility (hip flexor stretches, pigeon pose)
+- Proper lifting technique (neutral spine, engage core)
+
+**Management:**
+- Avoid bed rest; maintain gentle movement
+- Apply heat for muscle tension, ice for acute inflammation
+- Gentle stretching and walking
+
+### Knee Pain
+**Prevention:**
+- Strengthen glutes and quadriceps
+- Improve ankle mobility
+- Proper footwear for activities
+- Gradual progression in training intensity
+
+### Shoulder Impingement
+**Prevention:**
+- Strengthen rotator cuff muscles
+- Improve thoracic spine mobility
+- Avoid overhead activities if painful
+- Focus on posterior deltoid and rhomboid strengthening
+
+## Periodization Strategies
+
+### Linear Periodization
+- **Weeks 1-4**: High volume, low intensity (12-15 reps)
+- **Weeks 5-8**: Moderate volume, moderate intensity (8-10 reps)
+- **Weeks 9-12**: Low volume, high intensity (3-5 reps)
+
+### Undulating Periodization
+- **Monday**: Heavy (3-5 reps, 85-95% 1RM)
+- **Wednesday**: Moderate (6-8 reps, 75-85% 1RM)
+- **Friday**: Light (12-15 reps, 60-75% 1RM)
+
+### Block Periodization
+- **Accumulation Block**: High volume, technique focus
+- **Intensification Block**: Reduced volume, increased intensity
+- **Realization Block**: Peak performance, competition prep
+
+## Special Populations
+
+### Older Adults (65+)
+- **Focus**: Balance, functional movements, fall prevention
+- **Frequency**: 2-3 strength sessions, daily balance work
+- **Modifications**: Seated exercises, resistance bands, slower progressions
+
+### Pregnant Women
+- **Avoid**: Supine positions after first trimester, contact sports
+- **Recommended**: Walking, swimming, prenatal yoga, pelvic floor exercises
+- **Intensity**: Moderate (able to hold conversation during exercise)
+
+### Youth Athletes (Under 18)
+- **Emphasis**: Movement quality over quantity
+- **Resistance**: Bodyweight and light weights initially
+- **Recovery**: Extra attention to sleep and nutrition during growth spurts

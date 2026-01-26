@@ -5,7 +5,7 @@ from app.config import settings
 client = OpenAI(api_key=settings.OPENAI_API_KEY)
 
 class GeneralAgent:
-    """Handles queries outside fitness, nutrition, and health domains."""
+    """Handles queries outside fitness, nutrition, and health domains with RAG support."""
 
     def respond(self, message: str) -> str:
         # First, analyze if this might actually belong to one of our domains
@@ -25,17 +25,42 @@ class GeneralAgent:
         ).choices[0].message.content.strip()
 
         if analysis in ["FITNESS", "NUTRITION", "HEALTH"]:
+            # Try to provide some relevant information using targeted RAG
+            context_docs = ""
+            try:
+                # Use domain-specific search based on analysis
+                if analysis == "FITNESS":
+                    from tools.rag import search_fitness
+                    context_docs = "\n".join(search_fitness(message))
+                elif analysis == "NUTRITION":
+                    from tools.rag import search_nutrition
+                    context_docs = "\n".join(search_nutrition(message))
+                elif analysis == "HEALTH":
+                    from tools.rag import search_medical
+                    context_docs = "\n".join(search_medical(message))
+            except Exception:
+                context_docs = "No additional context available."
+            
             domain_map = {
                 "FITNESS": "🏋️ fitness",
                 "NUTRITION": "🍎 nutrition", 
                 "HEALTH": "🩺 health"
             }
-            reply = (
-                f"I think your question might actually be related to {domain_map[analysis]}! "
-                f"Could you be more specific so I can help you better?: '{message}'"
+            
+            # Provide helpful information while suggesting the correct domain
+            prompt = (
+                f"User asked: '{message}' which relates to {analysis.lower()}.\n\n"
+                f"Context: {context_docs}\n\n"
+                f"Provide a brief helpful response (1-2 sentences) and suggest they ask "
+                f"the specialized {analysis.lower()} agent for more detailed help."
             )
-            # Note: In a real implementation, you'd want to re-route here
-            # For now, we'll just suggest the correct domain
+            
+            reply = client.chat.completions.create(
+                model=settings.CHAT_MODEL,
+                messages=[{"role": "user", "content": prompt}]
+            ).choices[0].message.content
+            
+            reply += f"\n\nFor more detailed help, try asking the {domain_map[analysis]} specialist!"
         else:
             reply = (
                 f"I'm specialized in fitness 🏋️, nutrition 🍎, and health 🩺 topics. "

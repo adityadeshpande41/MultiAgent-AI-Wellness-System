@@ -36,10 +36,11 @@ User Profile Context:
                 # Database not available, continue without profile
                 pass
         
-        # Try to retrieve context from knowledge base
+        # Try to retrieve context from medical knowledge bases
         context_docs = ""
         try:
-            context_docs = "\n".join(search(question))
+            from tools.rag import search_medical
+            context_docs = "\n".join(search_medical(question))
         except Exception as e:
             # FAISS index not available, continue without RAG context
             context_docs = "No additional context available."
