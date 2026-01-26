@@ -13,14 +13,15 @@ class DoctorAgent:
         # Get user profile for personalized advice
         profile_context = ""
         if user:
-            from tools.db import get_session, UserProfile
-            from sqlmodel import select
-            
-            with get_session() as s:
-                profile = s.exec(select(UserProfile).where(UserProfile.user == user)).first()
-                if profile:
-                    bmi_display = f"{profile.bmi:.1f}" if profile.bmi is not None else "unknown"
-                    profile_context = f"""
+            try:
+                from tools.db import get_session, UserProfile
+                from sqlmodel import select
+                
+                with get_session() as s:
+                    profile = s.exec(select(UserProfile).where(UserProfile.user == user)).first()
+                    if profile:
+                        bmi_display = f"{profile.bmi:.1f}" if profile.bmi is not None else "unknown"
+                        profile_context = f"""
 User Profile Context:
 - Age: {profile.age}, Gender: {profile.gender}
 - BMI: {bmi_display}
@@ -31,9 +32,17 @@ User Profile Context:
 - Smoking: {'Yes' if profile.smoking else 'No'}
 - Activity Level: {profile.activity_level}
 """
+            except Exception as e:
+                # Database not available, continue without profile
+                pass
         
-        # Retrieve context from knowledge base
-        context_docs = "\n".join(search(question))
+        # Try to retrieve context from knowledge base
+        context_docs = ""
+        try:
+            context_docs = "\n".join(search(question))
+        except Exception as e:
+            # FAISS index not available, continue without RAG context
+            context_docs = "No additional context available."
         
         prompt = (
             f"You are a health assistant. {DISCLAIMER}\n\n"
