@@ -1,4 +1,3 @@
-# Fitness coaching agent
 from openai import OpenAI
 from app.config import settings
 from tools.db import Workout, get_session
@@ -6,23 +5,20 @@ from tools.db import Workout, get_session
 client = OpenAI(api_key=settings.OPENAI_API_KEY)
 
 class FitnessCoachAgent:
-    """Motivational workout advisor."""
+    """Motivational fitness coach providing workout guidance and training advice."""
 
     def respond(self, user: str, message: str) -> str:
-        import streamlit as st
-        st.write(f"🏋️ FITNESS COACH: Responding to user '{user}'")
-        
         # Get user profile for personalized advice
-        from tools.db import get_session, UserProfile
-        from sqlmodel import select
-        
         profile_context = ""
-        with get_session() as s:
-            profile = s.exec(select(UserProfile).where(UserProfile.user == user)).first()
-            if profile:
-                st.write(f"🏋️ FITNESS COACH: Using profile - Goal: {profile.primary_goal}")
-                bmi_display = f"{profile.bmi:.1f}" if profile.bmi is not None else "unknown"
-                profile_context = f"""
+        try:
+            from tools.db import get_session, UserProfile
+            from sqlmodel import select
+            
+            with get_session() as s:
+                profile = s.exec(select(UserProfile).where(UserProfile.user == user)).first()
+                if profile:
+                    bmi_display = f"{profile.bmi:.1f}" if profile.bmi is not None else "unknown"
+                    profile_context = f"""
 User Profile Context:
 - Age: {profile.age}, Gender: {profile.gender}
 - Fitness Level: {profile.fitness_experience}
@@ -31,18 +27,15 @@ User Profile Context:
 - BMI: {bmi_display}
 - Health Conditions: {profile.health_conditions or 'none'}
 """
-            else:
-                st.write(f"🏋️ FITNESS COACH: No profile found")
-        
-        st.write("🏋️ FITNESS COACH: Generating response...")
+        except Exception:
+            pass
         
         # Try to retrieve relevant fitness context
         context_docs = ""
         try:
             from tools.rag import search
             context_docs = "\n".join(search(f"fitness {message}"))
-        except Exception as e:
-            # RAG not available, continue without context
+        except Exception:
             context_docs = "No additional context available."
         
         prompt = (
@@ -61,11 +54,12 @@ User Profile Context:
 
         reply = f"🏋️ *[Fitness Coach]*\n{reply}"
 
-        # Log workout entry
-        with get_session() as s:
-            s.add(Workout(user=user, description=message.strip()))
-            s.commit()
-        st.write("🏋️ FITNESS COACH: Response generated and logged")
+        # Try to log workout entry
+        try:
+            with get_session() as s:
+                s.add(Workout(user=user, description=message.strip()))
+                s.commit()
+        except Exception:
+            pass
 
         return reply
-

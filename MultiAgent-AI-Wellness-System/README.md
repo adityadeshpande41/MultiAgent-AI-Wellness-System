@@ -1,41 +1,27 @@
-# 🏃‍♂️ AI Wellness Multi-Agent System
+# Multi-Agent AI Wellness System
 
-An intelligent wellness assistant powered by multiple specialized AI agents that provide personalized fitness, nutrition, and health guidance through a modern web interface.
+A sophisticated AI-powered wellness assistant that uses multiple specialized agents to provide personalized fitness, nutrition, and health guidance. The system features intelligent routing with confidence-based clarification questions and a clean Streamlit interface.
 
 ## 🌟 Features
 
 ### 🤖 Multi-Agent Architecture
-- **Router Agent**: Intelligently classifies user queries and routes them to the appropriate specialist
-- **Fitness Coach**: Provides personalized workout advice and exercise guidance
-- **Nutrition Specialist**: Offers meal planning and dietary recommendations
-- **Doctor Avatar**: Handles health concerns with proper medical disclaimers
-- **General Agent**: Manages out-of-domain queries with helpful redirects
+- **Fitness Coach Agent**: Workout routines, exercise guidance, training plans
+- **Nutrition Specialist Agent**: Meal planning, calorie information, dietary advice
+- **Doctor Avatar Agent**: Health concerns, symptoms, wellness tips
+- **Router Agent**: Intelligent query routing with LLM-based confidence scoring
+- **Orchestrator**: Coordinates agent workflows and manages conversations
 
-### 📊 Comprehensive Tracking
-- **User Profiles**: Complete health profiles with BMI calculation and body age analysis
-- **Meal Logging**: Daily nutrition tracking with calorie and macro counting
-- **Workout Sessions**: Exercise logging with duration and intensity tracking
-- **Analytics Dashboard**: Visual insights and progress tracking
+### 🧠 Intelligent Routing System
+- **Two-Option Approach**:
+  1. **Unrelated Queries**: Polite redirection to wellness topics
+  2. **Ambiguous Wellness Queries**: Clarifying questions to determine intent
+  3. **Clear Wellness Queries**: Direct routing to appropriate specialist
 
-### 🧠 Smart Knowledge Base
-- **RAG System**: Retrieval-Augmented Generation using FAISS vector search
-- **Curated Content**: Expert-reviewed fitness, nutrition, and health information
-- **Personalized Responses**: Context-aware advice based on user profiles
-
-### 🎨 Modern Interface
-- **Streamlit Web App**: Clean, responsive chat interface
-- **Real-time Workflow**: Live agent routing and processing visibility
-- **Multi-page Dashboard**: Profile management, logging, and analytics
-
-## 🏗️ Architecture
-
-```
-User Query → Router Agent → Specialized Agent → Personalized Response
-                ↓
-    [Fitness] [Nutrition] [Health] [General]
-                ↓
-    User Profile + RAG Context → Tailored Advice
-```
+### 💬 Smart Conversation Flow
+- **Confidence-based routing** (70% threshold)
+- **Context-aware clarification questions**
+- **Conversation state management**
+- **Graceful error handling**
 
 ## 🚀 Quick Start
 
@@ -45,12 +31,10 @@ User Query → Router Agent → Specialized Agent → Personalized Response
 
 ### Installation
 
-1. **Clone and setup environment**
+1. **Clone the repository**
 ```bash
-git clone <repository-url>
-cd ai-wellness
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+git clone https://github.com/your-username/MultiAgent-AI-Wellness-System.git
+cd MultiAgent-AI-Wellness-System
 ```
 
 2. **Install dependencies**
@@ -58,139 +42,171 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3. **Configure environment**
-```bash
-cp .env.example .env
-# Edit .env and add your OpenAI API key
+3. **Set up environment variables**
+Create a `.env` file in the root directory:
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+CHAT_MODEL=gpt-4o-mini
+EMBEDDING_MODEL=text-embedding-3-small
 ```
 
-4. **Initialize knowledge base**
+4. **Run the application**
+
+**Option A: Simple Chat Interface (Recommended for testing)**
 ```bash
-python -c "from tools.rag import build_index; build_index()"
+streamlit run app/main_streamlit_simple.py
 ```
 
-5. **Run the application**
+**Option B: Full Application (with database features)**
 ```bash
 streamlit run app/main_streamlit.py
 ```
 
-Visit `http://localhost:8501` to access the application.
+## 🧪 Testing the System
+
+### Test Cases for Two-Option Routing
+
+**🚫 Unrelated Queries** (should get polite redirection):
+- "What is the color of the sky?"
+- "What time is it?"
+- "Tell me a joke"
+- "How's the weather?"
+
+**❓ Ambiguous Wellness Queries** (should ask clarifying questions):
+- "I feel bad"
+- "I have no energy"
+- "I want to improve"
+- "I'm struggling"
+- "Something is wrong with me"
+
+**✅ Clear Wellness Queries** (should route directly):
+- "How many calories in pizza?" → Nutrition
+- "I have a headache" → Health
+- "I want to start working out" → Fitness
+- "Show me my progress" → Tracking
 
 ## 📁 Project Structure
 
 ```
-ai-wellness/
-├── app/                    # Web application
-│   ├── main_streamlit.py  # Main Streamlit interface
-│   ├── api.py             # FastAPI endpoints
-│   └── config.py          # Configuration management
-├── agents/                 # AI agents
-│   ├── router.py          # Query classification
-│   ├── fitness_coach.py   # Fitness specialist
-│   ├── nutrition_specialist.py # Nutrition expert
-│   ├── doctor_avatar.py   # Health advisor
-│   ├── orchestrator.py    # Custom workflow orchestrator
-│   └── run_graph.py       # Workflow execution (legacy)
-├── tools/                  # Utilities
-│   ├── db.py              # Database models
-│   ├── rag.py             # Vector search system
-│   ├── nutrition_calculator.py # Nutrition analysis
-│   └── profile_analyzer.py # Health insights
-├── data/                   # Knowledge base
-│   └── seed_docs/         # Expert content
-│       ├── fitness.txt
-│       ├── nutrition.txt
-│       └── medical.txt
-└── storage/               # Data persistence
-    └── app.db            # SQLite database
+MultiAgent-AI-Wellness-System/
+├── agents/                     # AI agent modules
+│   ├── orchestrator.py        # Main workflow coordinator
+│   ├── router.py              # LLM-based intelligent routing
+│   ├── clarification_agent.py # Handles ambiguous queries
+│   ├── fitness_coach.py       # Fitness guidance agent
+│   ├── nutrition_specialist.py # Nutrition advice agent
+│   ├── doctor_avatar.py       # Health consultation agent
+│   ├── tracking_viz.py        # Progress tracking agent
+│   ├── general_agent.py       # Out-of-domain handler
+│   └── api_tool_agent.py      # External API integration
+├── app/                       # Streamlit applications
+│   ├── main_streamlit.py      # Full application
+│   ├── main_streamlit_simple.py # Simple chat interface
+│   └── config.py              # Configuration settings
+├── tools/                     # Utility modules
+│   ├── db.py                  # Database models
+│   ├── rag.py                 # RAG search functionality
+│   ├── nutrition_calculator.py # Nutrition calculations
+│   ├── profile_analyzer.py    # User profile analysis
+│   └── safety.py              # Safety checks
+├── data/                      # Data storage
+│   ├── embeddings.index       # FAISS vector index
+│   ├── meta.json             # Metadata
+│   └── seed_docs/            # Knowledge base documents
+├── requirements.txt           # Python dependencies
+└── README.md                 # This file
 ```
-
-## 🎯 Usage Examples
-
-### Chat Interface
-- **Fitness**: "I want to start working out but I'm a beginner"
-- **Nutrition**: "What should I eat for breakfast to lose weight?"
-- **Health**: "I've been feeling anxious lately, any tips?"
-- **General**: "What's the weather like?" (redirected appropriately)
-
-### Profile Management
-- Complete health questionnaire
-- BMI and body age calculation
-- Goal setting and tracking
-- AI-powered health insights
-
-### Tracking & Analytics
-- Log meals with automatic nutrition calculation
-- Record workout sessions with intensity tracking
-- View progress charts and trends
-- Weekly summaries and recommendations
-
-## 🛠️ Technology Stack
-
-- **Frontend**: Streamlit
-- **Backend**: FastAPI, SQLModel
-- **AI/ML**: OpenAI GPT-4, Custom Multi-Agent Orchestrator
-- **Database**: SQLite
-- **Vector Search**: FAISS
-- **Data Processing**: Pandas, NumPy
 
 ## 🔧 Configuration
 
 ### Environment Variables
-```bash
-OPENAI_API_KEY=your_openai_api_key_here
-EMBEDDING_MODEL=text-embedding-3-small
-DB_URL=sqlite:///storage/app.db
-ENVIRONMENT=production
+- `OPENAI_API_KEY`: Your OpenAI API key (required)
+- `CHAT_MODEL`: OpenAI model for conversations (default: gpt-4o-mini)
+- `EMBEDDING_MODEL`: Model for embeddings (default: text-embedding-3-small)
+- `DB_URL`: Database URL (default: sqlite:///./app.db)
+
+### Confidence Threshold
+Adjust the confidence threshold in `agents/router.py`:
+```python
+self.confidence_threshold = 0.70  # 70% confidence threshold
 ```
 
-### Customization
-- **Knowledge Base**: Add documents to `data/seed_docs/`
-- **Agents**: Modify agent behavior in `agents/` directory
-- **UI**: Customize Streamlit interface in `app/main_streamlit.py`
+## 🏗️ Architecture
 
-## 📈 Features in Detail
+### Agent Communication Flow
+```
+User Input → Router Agent → Confidence Analysis → Decision:
+├── High Confidence (≥70%) → Direct Agent Routing
+├── Low Confidence + Wellness → Clarification Questions
+└── Low Confidence + Non-Wellness → Polite Redirection
+```
 
-### Intelligent Routing
-The router agent uses OpenAI's language model to classify user queries with high accuracy, falling back to keyword-based classification for reliability.
+### Key Components
 
-### Personalized Responses
-Each agent considers the user's profile, health conditions, goals, and preferences when generating responses, ensuring relevant and safe advice.
+1. **Router Agent**: Uses LLM to analyze queries and assign confidence scores
+2. **Orchestrator**: Manages the overall conversation flow and agent coordination
+3. **Specialized Agents**: Domain-specific agents for fitness, nutrition, and health
+4. **Clarification System**: Handles ambiguous queries with intelligent follow-up questions
 
-### Knowledge Integration
-The RAG system searches through curated health and fitness content to provide evidence-based recommendations alongside AI-generated advice.
+## 🛠️ Development
 
-### Comprehensive Tracking
-Users can log meals, workouts, and health metrics, with the system providing analytics and insights to support their wellness journey.
+### Adding New Agents
+1. Create agent class in `agents/` directory
+2. Implement `respond()` method
+3. Add agent to orchestrator's agent mapping
+4. Update router categories if needed
+
+### Customizing Routing
+- Modify confidence threshold in `router.py`
+- Adjust LLM prompts for different routing behavior
+- Add new categories to the routing system
+
+## 🔒 Error Handling
+
+The system includes robust error handling for:
+- Missing database connections
+- FAISS index unavailability
+- OpenAI API failures
+- Network connectivity issues
+
+All agents gracefully degrade functionality when dependencies are unavailable.
+
+## 📊 Features Overview
+
+### Core Capabilities
+- ✅ Multi-agent conversation routing
+- ✅ Confidence-based decision making
+- ✅ Context-aware clarification
+- ✅ Graceful error handling
+- ✅ Clean conversation interface
+- ✅ Extensible architecture
+
+### Optional Features (Full App)
+- 📊 User profile management
+- 🍽️ Meal logging and tracking
+- 🏋️ Workout logging and analytics
+- 📈 Progress visualization
+- 💾 SQLite database storage
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## ⚠️ Disclaimer
+## 🙏 Acknowledgments
 
-This application provides general wellness information and should not replace professional medical advice. Always consult with healthcare providers for medical concerns.
-
-## 🆘 Support
-
-For questions or issues:
-1. Check the [BUILD_GUIDE.md](BUILD_GUIDE.md) for detailed setup instructions
-2. Review the troubleshooting section below
-3. Open an issue on GitHub
-
-### Common Issues
-- **OpenAI API errors**: Verify your API key in `.env`
-- **Database issues**: Delete `storage/app.db` to reset
-- **RAG index problems**: Rebuild with `python -c "from tools.rag import build_index; build_index()"`
+- OpenAI for providing the language models
+- Streamlit for the web interface framework
+- FAISS for vector similarity search
+- SQLModel for database management
 
 ---
 
-Built with ❤️ for better health and wellness through AI
+**Ready to test?** Run `streamlit run app/main_streamlit_simple.py` and try the test cases above!

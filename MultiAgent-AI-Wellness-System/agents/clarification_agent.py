@@ -4,45 +4,34 @@ import streamlit as st
 
 class ClarificationAgent:
     """
-    Handles conversation flow when user queries are ambiguous and need clarification.
-    Manages the state of clarification conversations.
+    Manages conversation flow for ambiguous wellness queries.
+    Handles clarification state and follow-up questions.
     """
     
     def __init__(self):
-        # Store pending clarifications (in a real app, this would be in a database)
         self.pending_clarifications = {}
     
     def is_clarification_response(self, user: str, message: str) -> bool:
-        """
-        Check if this message is a response to a pending clarification question.
-        """
+        """Check if this message is a response to a pending clarification question."""
         return user in self.pending_clarifications
     
     def store_pending_clarification(self, user: str, original_message: str, scores: Dict[str, float]):
-        """
-        Store a pending clarification for a user.
-        """
+        """Store a pending clarification for a user."""
         import time
         self.pending_clarifications[user] = {
             "original_message": original_message,
             "scores": scores,
             "timestamp": time.time()
         }
-        st.write(f"💾 CLARIFICATION: Stored pending clarification for user '{user}'")
     
     def get_pending_clarification(self, user: str) -> Optional[Dict]:
-        """
-        Get the pending clarification for a user.
-        """
+        """Get the pending clarification for a user."""
         return self.pending_clarifications.get(user)
     
     def clear_pending_clarification(self, user: str):
-        """
-        Clear the pending clarification for a user.
-        """
+        """Clear the pending clarification for a user."""
         if user in self.pending_clarifications:
             del self.pending_clarifications[user]
-            st.write(f"🗑️ CLARIFICATION: Cleared pending clarification for user '{user}'")
     
     def detect_clarification_intent(self, message: str, scores: Dict[str, float]) -> Optional[str]:
         """

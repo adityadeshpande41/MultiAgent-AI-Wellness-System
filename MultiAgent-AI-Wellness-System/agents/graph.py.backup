@@ -1,7 +1,0 @@
-# BACKUP: Original LangGraph implementation
-# This file has been replaced by orchestrator.py
-# Keeping for reference only
-
-# Original content moved to backup for safety
-# The new orchestrator.py provides the same functionality
-# without LangGraph dependencies
