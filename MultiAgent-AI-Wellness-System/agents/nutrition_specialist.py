@@ -28,9 +28,14 @@ User Profile Context:
 - Health Conditions: {profile.health_conditions or 'none'}
 """
         
-        # Retrieve relevant nutrition context
-        from tools.rag import search
-        context_docs = "\n".join(search(f"nutrition {message}"))
+        # Try to retrieve relevant nutrition context
+        context_docs = ""
+        try:
+            from tools.rag import search
+            context_docs = "\n".join(search(f"nutrition {message}"))
+        except Exception as e:
+            # RAG not available, continue without context
+            context_docs = "No additional context available."
         
         prompt = (
             f"You are a nutrition coach. User says: '{message}'\n\n"

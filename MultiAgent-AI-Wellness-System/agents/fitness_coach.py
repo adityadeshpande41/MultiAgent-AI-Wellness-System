@@ -36,9 +36,14 @@ User Profile Context:
         
         st.write("🏋️ FITNESS COACH: Generating response...")
         
-        # Retrieve relevant fitness context
-        from tools.rag import search
-        context_docs = "\n".join(search(f"fitness {message}"))
+        # Try to retrieve relevant fitness context
+        context_docs = ""
+        try:
+            from tools.rag import search
+            context_docs = "\n".join(search(f"fitness {message}"))
+        except Exception as e:
+            # RAG not available, continue without context
+            context_docs = "No additional context available."
         
         prompt = (
             f"You are a fitness coach. User says: '{message}'\n\n"
